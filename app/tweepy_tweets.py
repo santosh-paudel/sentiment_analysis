@@ -23,5 +23,6 @@ class MyStreamListener(tweepy.StreamListener):
             return False
 
 #now its time for the stream
-myStreamListener=MyStreamListener()
-myStream=tweepy.Stream(auth=api.auth,listener=myStreamListener).filter(track=['#music'],async=True)
+def stream_tweets():
+    myStreamListener=MyStreamListener()
+    myStream=tweepy.Stream(auth=api.auth,listener=myStreamListener).filter(track=['#music'],async=True)

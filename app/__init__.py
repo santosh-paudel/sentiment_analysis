@@ -1,2 +1,4 @@
 #import stream object from tweepy_tweets
-from tweepy_tweets import myStream
+from flask import Flask
+
+app=Flask(__name__)
