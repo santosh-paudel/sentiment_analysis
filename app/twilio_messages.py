@@ -14,5 +14,5 @@ def text_message():
     #return 'hello'
     return message_body
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()

@@ -26,3 +26,5 @@ class MyStreamListener(tweepy.StreamListener):
 def stream_tweets():
     myStreamListener=MyStreamListener()
     myStream=tweepy.Stream(auth=api.auth,listener=myStreamListener).filter(track=['#music'],async=True)
+
+stream_tweets()
