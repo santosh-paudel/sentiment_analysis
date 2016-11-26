@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+ 
+
+  <meta http-equiv="refresh" content="3" />
+  {% for items in user_tweets %}
+  	<button type="button" class="btn bg-success" style="width:100%" bgcolor='#D9EDF7'><p align="left" style="font-family: Lucida Console">{{items['tweet']}} </button><br> <br>
+  {% endfor %}
+</div>
+
+
+{% endblock %}
+

@@ -1,3 +1,12 @@
-from app import app
-from twilio_messages import text_message
-from tweepy_tweets import stream_tweets
+#from flask import Flask
+
+#app=Flask(__name__)
+
+#from app.twitter.tweepy_tweets import tweets_now
+
+
+from app.twitter.tweepy_tweets import app
+
+
+
+#app.register_blueprint(tweets_now)
